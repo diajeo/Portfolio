@@ -22,7 +22,6 @@ body {
 }
 
 .blue-bg {
-    background-color: #0D1445;
     background-color: var(--navy);
     color: #FFFFEE;
 }
@@ -107,7 +106,6 @@ section#hero h2 {
 }
 
 section#hero p {
-    font-size: 20px;
     max-width: 465px;
     margin: auto;
     margin-bottom: 20px;
