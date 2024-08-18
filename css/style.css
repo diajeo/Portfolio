@@ -144,3 +144,25 @@ section#skills span {
     font-size: 16px;
     letter-spacing: -1px;
 }
+
+section#experience article {
+    border-bottom: 1px solid var(--pink);
+    padding: 30px 0;
+}
+section#experience article:first-of-type {
+    padding-top: 0;
+}
+
+section#experience article:last-of-type {
+    border-bottom: none;
+}
+
+section#experience article h3 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section#experience article p {
+    margin: 0; 
+}
