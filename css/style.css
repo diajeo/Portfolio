@@ -1,3 +1,14 @@
+/* The :root pseudo-class represents the html element. */
+
+:root {
+    --navy: #0D1445;
+    --green: #C2D9D1;
+    --purple: #BFBFDB;
+    --red: #AD525E;
+    --cream: #FFFFEE;
+    --pink: #E0D6D9;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,16 +16,49 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+
 .blue-bg {
     background-color: #0D1445;
+    background-color: var(--navy);
     color: #FFFFEE;
 }
 
 .button {
-    background-color: #C2D9D1;
+    background-color: var(--green);
     padding: 12px 12px;
     border-radius: 6px;
 }
+
+section {
+    padding: 40px 0px;
+}
+
+hr {
+    width: 70px;
+    height: 8px;
+    background-color: var(--red);
+    margin: 16px auto 32px auto;
+    border-radius: 100px;
+    border: none;
+}
+
+section .section-title {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+section p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
 
 header {
     text-align: center;
@@ -30,7 +74,7 @@ header li {
 }
 
 header a {
-    color: #FFFFEE;
+    color: var(--cream);
     text-decoration: none;
     margin: 0 22px;
 }
@@ -51,23 +95,22 @@ section#hero h1 {
     margin-top: 15px;
     margin-bottom: 0;
     letter-spacing: -2px;
+    color: var(--purple);
 }
 
 section#hero h2 {
     font-size: 20px;
     font-weight: normal;
-    color: #AD525E;
+    color: var(--red);
     margin-bottom: 20px;
     letter-spacing: 3px;
 }
 
 section#hero p {
     font-size: 20px;
-    font-weight: normal;
     max-width: 465px;
     margin: auto;
     margin-bottom: 20px;
-    line-height: 32px;
 }
 
 section#hero ul {
@@ -85,4 +128,21 @@ section#hero li img {
 
 a {
     text-decoration: none;
+}
+
+section#skills .skillset {
+    width: 900px;
+    margin: auto;
+}
+
+section#skills span {
+    display: inline-block;
+    background-color: var(--pink);
+    width: 146px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 72px;
+    margin: 8px;
+    font-size: 16px;
+    letter-spacing: -1px;
 }
